@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #002a44;
+    color: white; /* Set the default text color to white */
+    font-size: large;
+}
+
+h1, body > h2 {
+    text-align: center; /* Center-align h1 and direct child h2 elements of body */
+}
+
+.presentation {
+    padding: 20px; /* Added padding for better readability */
+    font-size: large;
+}
+
+.presentation .bouton-lien {
+    background-color: #33ff33; /* Couleur de fond du bouton */
+    color: #002a44; /* Couleur du texte */
+    padding: 15px 35px; /* Espacement à l'intérieur du bouton */
+    font-size: 18px; /* Taille de police */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur de type pointeur au survol */
+    text-decoration: none; /* Pas de soulignement sur le texte */
+    display: inline-block; /* Affichage en bloc */
+    border-radius: 5px; /* Bordure arrondie */
+    text-align: center; /* Centrage du texte dans le bouton */
+}
+
+.presentation .bouton-lien:hover {
+    background-color: green; /* Changement de couleur au survol */
+    color: #fff; /* Changement de couleur du texte au survol */
+}
+
+
+.projetpro{
+    padding: 20px;
+    font-size: large;
+}
+
+.bts, .choixslam, .choixsisr{
+    padding: 50px;
+}
+
+ul, li{
+    color: #33ff33;
+}
