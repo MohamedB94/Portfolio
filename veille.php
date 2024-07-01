@@ -212,7 +212,7 @@ En outre, Feedly propose des fonctionnalités de filtrage avancées, vous permet
         <h3>2.1 Vulnérabilités courantes</h3>
         <div class="article">
             <div class="article-content">
-                <img src="6.PNG" alt="Article1">
+                <img src="7.PNG" alt="Article1">
                 <div class="text-content">
                     <p>Une injection SQL est une technique d’injection de code utilisée par les cybercriminels pour accéder à votre base de données back-end et en modifier les informations. Comme il s’agit d’une technique de piratage courante, il est primordial de protéger votre entreprise contre ce risque. D’après l’OWASP (Open Web Application Security Project), les attaques par injection, qui incluent les injections SQL, représentaient <a href="https://owasp.org/Top10/A03_2021-Injection/">le troisième risque de sécurité le plus grave pesant sur les applications web en 2021</a> . Sur l’ensemble des applications testées, 274 000 occurrences d’injection ont été détectées.</p>
                     <p>Publié le 9 Novembre 2022</p>
@@ -228,6 +228,42 @@ En outre, Feedly propose des fonctionnalités de filtrage avancées, vous permet
                     <p>Le Cross-site Scripting (abrégé XSS) est une vulnérabilité particulièrement répandue dans les applications web. En effet, plus d’une application sur deux en contiendrait selon diverses études, d’anciennes comme de plus récentes. Pour étayer ce propos, il s’agit de la vulnérabilité la plus courante que nous découvrons et exploitons lors de nos <a href="https://www.vaadata    .com/fr/pentest-web/">pentests sur tous types d’applications et de sites web</a>.</p>
                     <p>Publié le 26 Septembre 2022 </p>
                     <a href="https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        <h2>III. Technologies de Sécurisation des Applications</h2>
+        <h3>3.1 Chiffrement des données</h3>
+
+        <div class="article">
+            <h2>3.1.1 MÉTHODES DE CHIFFREMENT MODERNES</h2>
+            <div class="article-content">
+                <img src="8.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Le <strong>chiffrement AES</strong> – pour Advanced Encryption Standard – est aujourd’hui devenu un standard dans de nombreux domaines. Les utilisateurs d’Internet stockent et envoient chaque <strong>jour des fichiers et des informations chiffrés</strong>. Le chiffrement protège les données contre le vol et les abus. Nous vous présentons le chiffrement AES comme <strong>méthode sûre</strong> de chiffrement par bloc et allons tenter d’expliquer simplement la <strong>cryptographie symétrique</strong>.</p>
+                    <p>Publié le 21 Avril 2022</p>
+                    <a href="https://blog.ostraca.fr/blog/fonctionnement-du-chiffrement-aes/#chiffrement-aes-en-application" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="article-content">
+                <img src="9.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Au cours de ces dernières années, les services de communication, qu’il s’agisse de WhatsApp ou de Zoom, ont annoncé la mise en place du chiffrement de bout en bout. Qu’est-ce que cela signifie ? Le concept de chiffrement est assez simple : il rend les données illisibles. Mais quel est le sens de bout en bout ? Quels sont les avantages et les inconvénients ? Sans entrer dans les calculs sous-jacents et les termes techniques, nous allons tout vous expliquer le plus simplement possible.</p>
+                    <p>Publié le 15 Septembre 2020</p>
+                    <a href="https://www.kaspersky.fr/blog/what-is-end-to-end-encryption/15668/" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <h2>3.1.2 Intégration du chiffrement dans les applications</h2>
+            <div class="article-content">
+                <img src="10.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Les API font partie intégrante du système, mais présentent des risques importants pour la sécurité si elles ne sont pas correctement définies et protégées. Ces éventuelles failles de sécurité peuvent être la cible de cybercriminels, entraînant d’importantes violations de données.</p>
+                    <p>Publié le 3 Janvier 2024</p>
+                    <a href="https://www.akamai.com/fr/glossary/what-is-an-api-security-audit#:~:text=Qu'est%2Dce%20qu'un%20audit%20des%20API%20%3F,leur%20fonctionnalit%C3%A9%20et%20leurs%20performances." class="bouton-lien">Consulter l'article</a>
                 </div>
             </div>
         </div>
