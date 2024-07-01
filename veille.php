@@ -197,6 +197,40 @@ En outre, Feedly propose des fonctionnalités de filtrage avancées, vous permet
                 </div>
             </div>
         </div>
+        <div class="article">
+            <h2>1.1.2 Impacts potentiels sur la vie privée</h2>
+            <div class="article-content">
+                <img src="5.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Cela n’aura pas pris longtemps. Vingt-quatre heures à peine après son lancement, l’application iMessage bricolée par Nothing a été retirée du Google Play Store en raison de soucis de sécurité.</p>
+                    <p>Publié le 20 Novembre 2023</p>
+                    <a href="https://www.clubic.com/actualite-509518-nothing-retire-son-application-imessage-d-android-a-cause-de-graves-soucis-de-securite-des-donnees.html" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        <h2>II. Principaux Risques de Sécurité des Données dans les Applications</h2>
+        <h3>2.1 Vulnérabilités courantes</h3>
+        <div class="article">
+            <div class="article-content">
+                <img src="6.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Une injection SQL est une technique d’injection de code utilisée par les cybercriminels pour accéder à votre base de données back-end et en modifier les informations. Comme il s’agit d’une technique de piratage courante, il est primordial de protéger votre entreprise contre ce risque. D’après l’OWASP (Open Web Application Security Project), les attaques par injection, qui incluent les injections SQL, représentaient <a href="https://owasp.org/Top10/A03_2021-Injection/">le troisième risque de sécurité le plus grave pesant sur les applications web en 2021</a> . Sur l’ensemble des applications testées, 274 000 occurrences d’injection ont été détectées.</p>
+                    <p>Publié le 9 Novembre 2022</p>
+                    <a href="https://www.crowdstrike.fr/cybersecurity-101/sql-injection/" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <h2>2.1.2 Cross-Site Scripting (XSS)</h2>
+            <div class="article-content">
+                <img src="5.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Le Cross-site Scripting (abrégé XSS) est une vulnérabilité particulièrement répandue dans les applications web. En effet, plus d’une application sur deux en contiendrait selon diverses études, d’anciennes comme de plus récentes. Pour étayer ce propos, il s’agit de la vulnérabilité la plus courante que nous découvrons et exploitons lors de nos <a href="https://www.vaadata    .com/fr/pentest-web/">pentests sur tous types d’applications et de sites web</a>.</p>
+                    <p>Publié le 26 Septembre 2022 </p>
+                    <a href="https://www.vaadata.com/blog/fr/failles-xss-principes-types-dattaques-exploitations-et-bonnes-pratiques-securite/" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
 <!-- Ajoutez plus d'articles ici en dupliquant la structure ci-dessus -->
 
 
