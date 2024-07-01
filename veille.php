@@ -167,6 +167,36 @@ En outre, Feedly propose des fonctionnalités de filtrage avancées, vous permet
                 </div>
             </div>
         </div>
+        <div class="article">
+            <div class="article-content">
+                <img src="2.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Le terme de piratage informatique et ses déclinaisons sont aujourd’hui souvent utilisés de manière galvaudée en lieu et place d’autres formes de cyberattaques. En pratique, le piratage informatique désigne le fait de s’introduire dans une ressource à l’insu de son propriétaire légitime. Il n’existe donc en réalité que deux grands types de piratage informatique : le piratage d’un équipement ou le piratage d’un compte en ligne.</p>
+                    <p>Publié le 2 Novembre 2022</p>
+                    <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/quels-sont-les-differents-types-de-piratage-informatique" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-content">
+                <img src="3.PNG" alt="Article1">
+                <div class="text-content">
+                    <p><a href="https://www.usine-digitale.fr/schneider-electric/">Schneider Electric</a>, fleuron national des solutions numériques d’énergie et d’automatisation industrielle, a confirmé avoir été touché mercredi 17 janvier par un ransomware, après des révélations du média BleepingComputer. La cyberattaque a notamment perturbé une partie de la plateforme cloud Resource Advisor, dont le fonctionnement n’est pas encore totalement rétabli.</p>
+                    <p>Publié le 30 Janvier 2024</p>
+                    <a href="https://www.usine-digitale.fr/article/cybersecurite-l-equipementier-francais-schneider-electric-touche-par-le-ransomware-cactus.N2207250" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-content">
+                <img src="4.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Une attaque par déni de service distribué, ou DDoS, est le nom que l’on donne à une technique d’attaque informatique. Elle vise à envoyer de nombreuses requêtes sur un service (un site web, une application) depuis plusieurs machines afin d’en perturber le bon fonctionnement. Une menace pour la cybersécurité aux multiples usages. Voici tout ce qu’il faut savoir sur les attaques DDoS.</p>
+                    <p>Publié le 29 septembre 2024</p>
+                    <a href="https://www.frandroid.com/culture-tech/securite-applications/1628765_quest-ce-quune-attaque-ddos" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
 <!-- Ajoutez plus d'articles ici en dupliquant la structure ci-dessus -->
 
 
