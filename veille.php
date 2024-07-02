@@ -267,9 +267,72 @@ En outre, Feedly propose des fonctionnalités de filtrage avancées, vous permet
                 </div>
             </div>
         </div>
-<!-- Ajoutez plus d'articles ici en dupliquant la structure ci-dessus -->
+
+        <h2>IV. Bonnes Pratiques en Matière de Développement Sécurisé</h2>
+        <h3>4.1 Formation des développeurs</h3>
+
+        <div class="article">
+            <h2>4.1.2 INTÉGRATION DE LA SÉCURITÉ DANS LE CYCLE DE DÉVELOPPEMENT</h2>
+            <div class="article-content">
+                <img src="10.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>À l’origine des failles de sécurité, il y a le plus souvent, une erreur humaine. Et les développeurs sont (à quelques rares exceptions prêtes ) des humains. Pourtant il existe quelques principes de base notamment recommandée par l’OWASP qui permettent de produire du code à minima sécurisé. Mais peu de développeurs prennent le temps d’intégrer et d’appliquer ces principes.</p>
+                    <p>Publié le 18 juin 2017</p>
+                    <a href="https://korben.info/developpement-securise-apprendre-a-maitriser-risque.html" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="article-content">
+                <img src="12.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Le DevSecOps correspond à une méthodologie de développement logiciel, s’attardant plus particulièrement sur la sécurité du cycle de développement. Une approche nécessaire afin de répondre aux nombreux enjeux en termes d’automatisation des processus de transformation.</p>
+                    <p>Publié le 11 avril 2023</p>
+                    <a href="https://www.weodeo.com/la-securite-informatique/definition-et-enjeux-du-devsecops#:~:text=Le%20DevSecOps%20correspond%20%C3%A0%20une,automatisation%20des%20processus%20de%20transformation." class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        <h2>4.2 Outils de sécurité pour les développeurs</h2>
+        <div class="article">
+            <h2>4.2.1 LINTERS DE SÉCURITÉ</h2>
+            <div class="article-content">
+                <img src="13.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>Un <a href="https://www.jetbrains.com/fr-fr/teamcity/ci-cd-guide/ci-cd-tools/">outil d’analyse statique</a> analyse le code à la recherche d’erreurs et de vulnérabilités connues, telles que les fuites de mémoire ou les débordements de mémoire tampon. L’analyse peut également permettre de faire appliquer les normes de codage.</p>
+                    <a href="https://www.jetbrains.com/fr-fr/teamcity/ci-cd-guide/concepts/static-code-analysis/" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>V. Perspectives Futures</h2>
+        <h3>5.1 Évolutions technologiques</h3>
+
+        <div class="article">
+            <h2>5.1.1 BLOCKCHAIN POUR LA SÉCURITÉ DES DONNÉES</h2>
+            <div class="article-content">
+                <img src="14.PNG" alt="Article1">
+                <div class="text-content">
+                    <p>La Blockchain est une technologie au potentiel de développement fort qui suscite de nombreuses questions, dont parfois celle de sa compatibilité au RGPD. C’est pourquoi la CNIL s’est saisie de ce sujet et propose des solutions concrètes aux acteurs qui souhaitent l’utiliser dans le contexte d’un traitement de données personnelles.</p>
+                    <p>Publié le 20 septembre 2018</p>
+                    <a href="https://www.cnil.fr/fr/blockchain-et-rgpd-quelles-solutions-pour-un-usage-responsable-en-presence-de-donnees-personnelles" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="article">
+            <h2>5.1.2 Intelligence artificielle pour la détection des menaces</h2>
+            <div class="article-content">
+                <img src="15.PNG" alt="Article1">
+                <div class="text-content">
+                    <p><strong>Les enjeux de l’intelligence artificielle en cybersécurité</strong>En pleine expansion, l’intelligence artificielle est en passe de bouleverser les enjeux cyber des organisations.</p>
+                    <p>Mis à jour le 07.08.2023</p>
+                    <a href="https://www.mailinblack.com/ressources/blog/limpact-de-lintelligence-artificielle-enjeux-et-applications/" class="bouton-lien">Consulter l'article</a>
+                </div>
+            </div>
+        </div>
+        
 </div>
 
     <footer>
