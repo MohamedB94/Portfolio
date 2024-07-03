@@ -11,11 +11,21 @@
 <header>
         <?php include 'header.php'; ?>
 </header>
-
-<div class="projet1">
-    <h1>Site ecom</h1>
+<h1>Ci-dessous vous retrouverez tous mes anciens projets réalisés à ce jour, cliquez sur l'un de mes projets pour en savoir plus !</h1>
+<div class="projet">
+    <!-- nom du projet -->
+            <div class="projet-content">
+                <img src="" alt="Article1">
+                <div class="text-content">
+                    <p><!--description du projet quizz -->/p>
+                </div>
+            </div>
 </div>
+<!-- dupliquer la structure en haut pour plusieur projet -->
 
+<!-- projet csharp -->
+ <!-- projet a faire chez moi -->
+  
 
 
 
