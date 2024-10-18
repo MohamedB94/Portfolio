@@ -11,7 +11,7 @@
 <header>
         <?php include 'header.php'; ?>
 </header>
-<h1>Ci-dessous vous retrouverez tous mes anciens projets réalisés à ce jour, cliquez sur l'un de mes projets pour en savoir plus !</h1>
+<h1>Ci-dessous vous retrouverez tous mes anciens projets réalisés à ce jour</h1>
 <div class="projet">
     <!-- nom du projet -->
             <div class="projet-content">
