@@ -27,7 +27,7 @@
     <li>Sécurité des applications</li>
     <li>Protection des données</li>
     <li>Cyber sécurité</li>
-    <li>GDPR</li>
+    <li>RGPD ou GPDR</li>
     <li>Chiffrement des données</li>
     <li>Sécurité des applications web</li>
     <li>Vulnérabilités de sécurité</li>
