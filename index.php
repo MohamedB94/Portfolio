@@ -20,6 +20,8 @@
         <br><br>
         Actuellement diplômé du BAC STI2D (Sciences et Technologies de <br> l'Industrie et du Développement Durable), spécialité EE (Energie  et Environnement). <br><br>
         <a href="cv.php" class="bouton-lien">Mon CV</a>
+        <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="bouton-lien">Télécharger mon CV</a>
+
     </div>
     <div class="projetpro">
         <h2>Mon Projet Profesionnel</h2>
