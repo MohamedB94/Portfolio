@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #032B46;
-    color: #fff;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
     margin: 0;
     padding: 20px;
 }
@@ -11,47 +11,102 @@ body {
     margin: auto;
 }
 
-h2, h3 {
-    color: #00FF00;
+h1, h2, h3 {
+    color: var(--accent-secondary);
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
 }
 
 .article {
-    margin-bottom: 20px;
+    margin-bottom: 2.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .article-content {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px;
-    /* background-color and border-radius removed */
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .article-content img {
-    max-width: 200px;
-    margin-right: 20px;
-    border-radius: 5px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .text-content {
-    max-width: 600px;
+    flex: 1;
 }
 
 .text-content p {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+ol, ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
 }
 
 .bouton-lien {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #00FF00;
-    color: #032B46;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
     text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .bouton-lien:hover {
-    background-color: #00cc00;
+    background-color: var(--accent-secondary);
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .article-content {
+        flex-direction: column;
+    }
+
+    .article-content img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
 }

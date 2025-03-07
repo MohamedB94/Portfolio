@@ -1,13 +1,35 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #002a44;
+/* Variables globales */
+:root {
+    --primary-color: #1A1A2E;
+    --secondary-color: #16213E;
+    --accent-color: #4D7C8A;
+    --accent-secondary: #00B4D8;
+    --text-primary: #E6E6E6;
+    --text-secondary: #8D8D8D;
 }
 
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Header et Navigation */
 header {
-    background-color: #002a44;
-    padding: 30px 0;
-    border-bottom: 1px solid #33ff33;
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    border-bottom: 2px solid var(--accent-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -15,29 +37,359 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 2rem;
 }
 
 nav ul li a {
-    color: white; 
+    color: var(--text-primary);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    position: relative;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-secondary);
+    transition: width 0.3s ease;
 }
 
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Sections principales */
+.presentation, .projetpro, .bts, .choixslam, .choixsisr {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--accent-secondary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Boutons */
+.bouton-lien {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+
+.bouton-lien:hover {
+    background-color: transparent;
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Listes */
+ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+/* Footer */
 .pf {
-    background-color: #002a44;
-    padding: 30px 0;
-    border-top: 1px solid #33ff33;
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+    border-top: 2px solid var(--accent-color);
     text-align: center;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-secondary);
+    transform: scale(1.1);
+}
+
+/* Media Queries pour Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .presentation, .projetpro, .bts, .choixslam, .choixsisr {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-bar {
+        height: 25px;
+    }
+    
+    .skill-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.presentation, .projetpro, .bts, .choixslam, .choixsisr {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Section Compétences */
+.competences {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.competence-item {
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.competence-item h3 {
+    color: var(--accent-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-bar {
+    position: relative;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.skill-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-primary);
+    z-index: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.skill-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary));
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* Animation pour les barres de compétences */
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--fill-level); }
+}
+
+/* Media Queries pour la section compétences */
+@media (max-width: 768px) {
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-bar {
+        height: 25px;
+    }
+    
+    .skill-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajout des styles pour les icônes */
+.competence-item h3 i {
+    margin-right: 0.5rem;
+    color: var(--accent-secondary);
+}
+
+.skill-label i {
+    margin-right: 0.5rem;
+    width: 1.2rem;
+    text-align: center;
+}
+
+/* Section Projets */
+.projets {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.projet-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-5px);
+}
+
+.projet-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.projet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.projet-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 46, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projet-card:hover .projet-overlay {
+    opacity: 1;
+}
+
+.projet-card:hover .projet-image img {
+    transform: scale(1.1);
+}
+
+.projet-description {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.projet-description h3 {
+    color: var(--accent-secondary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.projet-description p {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.projet-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.projet-tags span {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Media Queries pour les projets */
+@media (max-width: 768px) {
+    .projets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projet-image {
+        height: 180px;
+    }
 }
 
