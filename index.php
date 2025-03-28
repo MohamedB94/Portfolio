@@ -11,7 +11,22 @@
     <script src="skills.js" defer></script>
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Mohamed BENASR</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.php" class="active">Accueil</a></li>
+                    <li><a href="cv.php">CV</a></li>
+                    <li><a href="projets.php">Projets</a></li>
+                    <li><a href="veille.php">Veille</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
     <main>
         <section class="hero">
@@ -68,7 +83,32 @@
         </ul>
     </div>
     <footer>
-        <?php include 'footer.php';?>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: mohamed.benasr@example.com</p>
+                <p>Téléphone: 06 XX XX XX XX</p>
+            </div>
+            <div class="footer-social">
+                <h3>Suivez-moi</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="cv.php">CV</a></li>
+                    <li><a href="projets.php">Projets</a></li>
+                    <li><a href="veille.php">Veille</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mohamed BENASR - Tous droits réservés</p>
+        </div>
     </footer>
 </body>
 </html>
