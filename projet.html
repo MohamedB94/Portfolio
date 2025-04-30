@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="projet.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Mes Projets</title>
 </head>
 <body>
-<header>
-        <?php include 'header.php'; ?>
-</header>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Mohamed BENASR</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="stages.html">Stages</a></li>
+                    <li><a href="competences.html">Fiche de mes compétences</a></li>
+                    <li><a href="veille.html">Veille</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 <h1>Ci-dessous vous retrouverez tous mes anciens projets réalisés à ce jour</h1>
 <div class="projet">
     <h2>Ecom</h2>
@@ -49,17 +64,24 @@
                 </div>
             </div>
 </div>
- 
 
-
-
-
-
-
-
-            
-<footer>
-<?php include 'footer.php'; ?>
+<footer class="footer">
+    <div class="footer-box">
+        <div class="footer-content">
+            <h2>Contact</h2>
+            <p>Pour toute question ou demande d'information, n'hésitez pas à me contacter :</p>
+            <ul>
+                <li>Email : <a href="mailto:benasrmohamed94@gmail.com">benasrmohamed94@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/mohamed-benasr-a9a079255/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MohamedB94" target="_blank">GitHub</a>
+        </div>
+        <div class="footer-container">
+            <p>&copy; 2025 Mohamed BENASR. Tous droits réservés.</p>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
