@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="competences.css">
     <link rel="stylesheet" href="header.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js"></script>
 </head>
 <body>
     <header>
@@ -28,7 +30,27 @@
         </div>
     </header>
 
-
+    <section class="competences-section">
+        <h2>Tableau de Synthèse des Compétences</h2>
+        
+        <div class="pdf-container">
+            <div class="pdf-controls">
+                <button id="fullscreen-btn" class="fullscreen-btn">Mode Plein Écran</button>
+                <a href="ts.pdf" download class="download-btn">Télécharger</a>
+            </div>
+            <div id="pdf-viewer">
+                <canvas id="pdf-canvas"></canvas>
+            </div>
+        </div>
+        
+        <div class="competences-description">
+            <h3>À propos de ce tableau de synthèse</h3>
+            <p>
+                Ce document présente une synthèse complète de mes compétences acquises pendant mon BTS SIO 
+                option SLAM, mettant en évidence mon parcours de formation et mes réalisations professionnelles.
+            </p>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-box">
@@ -48,5 +70,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion du mode plein écran
+            const fullscreenBtn = document.getElementById('fullscreen-btn');
+            const pdfViewer = document.getElementById('pdf-viewer');
+            
+            fullscreenBtn.addEventListener('click', function() {
+                if (pdfViewer.requestFullscreen) {
+                    pdfViewer.requestFullscreen();
+                } else if (pdfViewer.webkitRequestFullscreen) { /* Safari */
+                    pdfViewer.webkitRequestFullscreen();
+                } else if (pdfViewer.msRequestFullscreen) { /* IE11 */
+                    pdfViewer.msRequestFullscreen();
+                }
+            });
+            
+            // PDF.js implementation
+            pdfjsLib.getDocument('resources/ts.pdf').promise.then(function(pdf) {
+                pdf.getPage(1).then(function(page) {
+                    var canvas = document.getElementById('pdf-canvas');
+                    var context = canvas.getContext('2d');
+                    
+                    var viewport = page.getViewport({scale: 1.5});
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    
+                    page.render({
+                        canvasContext: context,
+                        viewport: viewport
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

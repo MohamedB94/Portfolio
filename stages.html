@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stages - Mohamed BENASR</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stages.css">
     <link rel="stylesheet" href="header.css">
@@ -28,7 +28,80 @@
         </div>
     </header>
 
+    <section class="stages-section">
+        <div class="stage-nav-container">
+            <div class="stage-tabs">
+                <button class="stage-tab active" data-tab="stage1">Stage première année</button>
+                <button class="stage-tab" data-tab="stage2">Stage deuxième année</button>
+            </div>
+        </div>
 
+        <div class="stage-content-container">
+            <div id="stage1" class="stage-content active">
+                <h2>Stage première année</h2>
+                <div class="stage-details">
+                    <div class="stage-info">
+                        <h3>Insta Paris</h3>
+                        <p class="stage-period">Mai 2024 - Juillet 2024</p>
+                        <p class="stage-location">Paris, France</p>
+                    </div>
+                    <div class="stage-description">
+                        <h3>Description du stage</h3>
+                        <p>
+                            Lors de mon stage, j'ai conçu et développé un site e-commerce en full stack en utilisant les technologies HTML5, CSS3, JavaScript, PHP et MySQL. J'ai intégré des bibliothèques et frameworks tels que Bootstrap, jQuery et PHPMailer pour améliorer l'ergonomie, les fonctionnalités et la gestion des emails. <br>
+                            Le site inclut des fonctionnalités comme la gestion d'un catalogue de produits, la recherche avancée avec filtres, l'ajout au panier, la gestion des commandes, l'inscription et l'authentification des utilisateurs, ainsi que le paiement en ligne sécurisé. <br>
+                            Un tableau de bord d'administration complet a également été développé pour superviser les produits, les utilisateurs, les commandes, et consulter des statistiques détaillées. Ce projet m'a permis de renforcer mes compétences en développement web, en gestion de bases de données et en intégration de solutions dynamiques adaptées aux besoins des utilisateurs.
+                        </p>
+                    </div>
+                    <div class="stage-skills">
+                        <h3>Compétences acquises</h3>
+                        <ul>
+                            <li>Développement web frontend</li>
+                            <li>Intégration de bibliothèques et frameworks (Bootstrap, jQuery, PHPMailer)</li>
+                            <li>Gestion de bases de données</li>
+                            <li>Conception et développement de sites e-commerce</li>
+                            <li>Création de tableaux de bord d'administration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="stage2" class="stage-content">
+                <h2>Stage deuxième année</h2>
+                <div class="stage-details">
+                    <div class="stage-info">
+                        <h3>InnovQube</h3>
+                        <p class="stage-period">Février 2025 - Avril 2025</p>
+                        <p class="stage-location">Noisy-le-Grand, Île-de-France, France · À distance</p>
+                    </div>
+                    <div class="stage-description">
+                        <h3>Description du stage</h3>
+                        <p>
+                            Réalisation d’une recherche approfondie de plus de 4000 mots-clés via SEMrush, centralisée dans Grist pour une organisation optimale. Cette recherche a permis d’identifier des opportunités stratégiques pour améliorer le référencement naturel (SEO) et le positionnement sur Google. Une analyse concurrentielle détaillée a été effectuée à l’aide de SEO PowerSuite, notamment RankTracker, afin de mieux comprendre les forces et faiblesses des concurrents et d’élaborer des stratégies adaptées pour maximiser la visibilité en ligne.
+                        </p>
+                    </div>
+                    <div class="stage-skills">
+                        <h3>Compétences acquises</h3>
+                        <ul>
+                            <li>Recherche de mots-clés avec SEMrush</li>
+                            <li>Organisation et gestion de données avec Grist</li>
+                            <li>Optimisation SEO pour le positionnement sur Google</li>
+                            <li>Analyse concurrentielle avec SEO PowerSuite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-box">
@@ -48,5 +121,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.stage-tab');
+            const contents = document.querySelectorAll('.stage-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to current tab and content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
