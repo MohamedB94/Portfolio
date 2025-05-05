@@ -17,7 +17,7 @@ main {
     align-items: center;
 }
 
-h1 {
+.cv-container h1 {
     color: var(--text-primary);
     text-align: center;
     margin: 2rem 0;
